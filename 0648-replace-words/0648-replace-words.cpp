@@ -27,7 +27,7 @@ public:
         root = getNode('/');
     }
 
-    void insert(string word)
+    void insert(string &word)
     {
         Trienode *curr = root;
         int index;
@@ -44,7 +44,7 @@ public:
         curr->endsHere += 1;
     }
 
-    string search(string word)
+    string search(string &word)
     {
         Trienode *curr = root;
         int index;
