@@ -14,7 +14,6 @@ public:
         ListNode *prev = head;
         head = head->next;
         int i = 1, first = INT_MAX, last = 0, mini = INT_MAX;
-        vector<int> index;
         while(head->next)
         {
             if((head->val > prev->val && head->val > head->next->val) ||
